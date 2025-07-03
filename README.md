@@ -7,7 +7,6 @@
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://buzzer-app1.onrender.com/" />
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/martinsram3k/martinsram3k/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/martinsram3k/martinsram3k/output/github-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/martinsram3k/martinsram3k/output/github-snake.svg" />
