@@ -26,7 +26,7 @@ I'm a self-taught creative developer from the Czech Republic 🇨🇿 who bridge
 - 🎬 **Video & Motion** — Editing commercials, social content, and motion graphics
 - 🎨 **Graphic Design** — Brand identity, logos, print, and social media assets
 - 🌐 **Web Development** — Custom websites and web apps from scratch
-- ⚡ **Hardware & IoT** — Arduino, ESP32, Raspberry Pi projects
+- ⚡ **Hardware & IoT** — Arduino, ESP32, Raspberry Pi, and custom PCB design
 - 📫 **Contact** — [martinsramek040707@gmail.com](mailto:martinsramek040707@gmail.com)
 
 ---
