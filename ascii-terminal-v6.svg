@@ -52,34 +52,34 @@
   <!-- Subtle separator line -->
   <line x1="0" y1="38" x2="620" y2="38" stroke="#334155" stroke-width="0.5"/>
 
-  <!-- ==================== FRAME 1: whoami (0s - 4s) ==================== -->
+  <!-- ==================== FRAME 1: whoami (0s - 20s) ==================== -->
   <g opacity="1">
-    <animate attributeName="opacity" values="1;0;0" keyTimes="0;0.267;1.0" dur="15s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity" values="1;0;0" keyTimes="0;0.333;1.0" dur="60s" repeatCount="indefinite" calcMode="discrete"/>
     
     <!-- Line 1: $ whoami -->
     <text x="20" y="68" class="t prompt">❯ <tspan class="cmd">whoami</tspan></text>
     
-    <!-- Line 2: Output (appears at 0.5s) -->
+    <!-- Line 2: Output (appears at 2s) -->
     <text x="20" y="92" class="t out" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.033;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.033;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       Martin Šrámek
     </text>
     
-    <!-- Line 3: Description (appears at 1s) -->
+    <!-- Line 3: Description (appears at 4s) -->
     <text x="20" y="116" class="t dim" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.067;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.067;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       Freelance Creative Developer · Czech Republic 🇨🇿
     </text>
     
-    <!-- Line 5: $ cat services.json (appears at 1.5s) -->
+    <!-- Line 5: $ cat services.json (appears at 6s) -->
     <text x="20" y="154" class="t prompt" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.100;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.100;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       ❯ <tspan class="cmd">cat services.json</tspan>
     </text>
 
-    <!-- JSON output (appears at 2s) -->
+    <!-- JSON output (appears at 8s) -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.133;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.133;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       <text x="20" y="178" class="t dim">{</text>
       <text x="20" y="198" class="t">  <tspan class="accent">"video"</tspan><tspan class="dim">:</tspan>    <tspan class="out">"Premiere Pro, After Effects"</tspan><tspan class="dim">,</tspan></text>
       <text x="20" y="218" class="t">  <tspan class="accent">"design"</tspan><tspan class="dim">:</tspan>   <tspan class="out">"Photoshop, Illustrator, InDesign"</tspan><tspan class="dim">,</tspan></text>
@@ -88,23 +88,23 @@
       <text x="20" y="278" class="t dim">}</text>
     </g>
 
-    <!-- Status line (appears at 3s) -->
+    <!-- Status line (appears at 12s) -->
     <text x="20" y="312" class="t" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.200;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.200;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       <tspan class="prompt">❯</tspan> <tspan class="yellow">█</tspan>
     </text>
   </g>
 
-  <!-- ==================== FRAME 2: neofetch style (4s - 9s) ==================== -->
+  <!-- ==================== FRAME 2: neofetch style (20s - 40s) ==================== -->
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.267;0.600;1.0" dur="15s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.333;0.667;1.0" dur="60s" repeatCount="indefinite" calcMode="discrete"/>
 
     <!-- Line 1: $ neofetch -->
     <text x="20" y="68" class="t prompt">❯ <tspan class="cmd">neofetch --creative</tspan></text>
 
-    <!-- ASCII art block (appears at 4.5s) -->
+    <!-- ASCII art block (appears at 22s) -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.300;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.367;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       
       <!-- Left side: ASCII art -->
       <text x="20" y="100" class="t cyan" font-size="11" filter="url(#glow)">
@@ -127,9 +127,9 @@
       </text>
     </g>
 
-    <!-- Progress bars (appears at 5.5s) -->
+    <!-- Progress bars (appears at 26s) -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.367;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.433;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       
       <text x="300" y="210" class="t">
         <tspan x="300" dy="0"><tspan class="accent">Video</tspan><tspan class="dim">:</tspan>    <tspan class="out">████████████████</tspan><tspan class="dim">████</tspan> <tspan class="white">80%</tspan></tspan>
@@ -144,73 +144,73 @@
       </text>
     </g>
 
-    <!-- Blinking cursor -->
+    <!-- Blinking cursor (appears at 30s) -->
     <text x="20" y="330" class="t" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.300;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.500;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       <tspan class="prompt">❯</tspan> <tspan class="yellow">█</tspan>
     </text>
   </g>
 
-  <!-- ==================== FRAME 3: project showcase (9s - 15s) ==================== -->
+  <!-- ==================== FRAME 3: project showcase (40s - 60s) ==================== -->
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.600;1.0" dur="15s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.667;1.0" dur="60s" repeatCount="indefinite" calcMode="discrete"/>
 
     <text x="20" y="68" class="t prompt">❯ <tspan class="cmd">ls ~/projects --featured</tspan></text>
 
-    <!-- Table output (appears at 9.5s) -->
+    <!-- Table output (appears at 42s) -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.633;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.700;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
 
       <text x="20" y="96" class="t dim">┌──────────────────────┬────────────────────────────────┐</text>
       <text x="20" y="116" class="t"><tspan class="dim">│</tspan> <tspan class="cyan">PROJECT</tspan>              <tspan class="dim">│</tspan> <tspan class="cyan">DESCRIPTION</tspan>                    <tspan class="dim">│</tspan></text>
       <text x="20" y="136" class="t dim">├──────────────────────┼────────────────────────────────┤</text>
     </g>
 
-    <!-- Row 1 (appears at 10s) -->
+    <!-- Row 1 (appears at 44s) -->
     <text x="20" y="156" class="t" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.667;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.733;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       <tspan class="dim">│</tspan> <tspan class="out">🎬 klipni.eu</tspan>         <tspan class="dim">│</tspan> <tspan class="white">Video editing SaaS platform</tspan>    <tspan class="dim">│</tspan>
     </text>
 
-    <!-- Row 2 (appears at 10.5s) -->
+    <!-- Row 2 (appears at 46s) -->
     <text x="20" y="176" class="t" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.700;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.767;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       <tspan class="dim">│</tspan> <tspan class="out">🔌 FLOW</tspan>              <tspan class="dim">│</tspan> <tspan class="white">Custom macro keyboard</tspan>          <tspan class="dim">│</tspan>
     </text>
 
-    <!-- Row 3 (appears at 11s) -->
+    <!-- Row 3 (appears at 48s) -->
     <text x="20" y="196" class="t" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.733;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.800;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       <tspan class="dim">│</tspan> <tspan class="out">⌨️  Macropad</tspan>          <tspan class="dim">│</tspan> <tspan class="white">Web configurator for macropads</tspan> <tspan class="dim">│</tspan>
     </text>
 
-    <!-- Row 4 (appears at 11.5s) -->
+    <!-- Row 4 (appears at 50s) -->
     <text x="20" y="216" class="t" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.767;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.833;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       <tspan class="dim">│</tspan> <tspan class="out">🍎 LidMonitor</tspan>        <tspan class="dim">│</tspan> <tspan class="white">MacBook lid state automation</tspan>   <tspan class="dim">│</tspan>
     </text>
 
-    <!-- Row 5 (appears at 12s) -->
+    <!-- Row 5 (appears at 52s) -->
     <text x="20" y="236" class="t" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.800;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.867;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       <tspan class="dim">│</tspan> <tspan class="out">🪞 Smart Mirror</tspan>      <tspan class="dim">│</tspan> <tspan class="white">Raspberry Pi smart mirror</tspan>      <tspan class="dim">│</tspan>
     </text>
 
-    <!-- Table bottom -->
+    <!-- Table bottom (appears at 52s) -->
     <text x="20" y="256" class="t dim" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.800;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.867;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       └──────────────────────┴────────────────────────────────┘
     </text>
 
-    <!-- Summary line -->
+    <!-- Summary line (appears at 55s) -->
     <text x="20" y="290" class="t" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.833;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.917;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       <tspan class="dim">→</tspan> <tspan class="white">5 projects</tspan> <tspan class="dim">·</tspan> <tspan class="out">open to collaborate</tspan> <tspan class="dim">·</tspan> <tspan class="accent">DM me anytime</tspan>
     </text>
 
-    <!-- Blinking cursor -->
+    <!-- Blinking cursor (appears at 57s) -->
     <text x="20" y="330" class="t" opacity="0">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.867;1.0" dur="15s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.950;1.0" dur="60s" repeatCount="indefinite" fill="freeze" calcMode="discrete"/>
       <tspan class="prompt">❯</tspan> <tspan class="yellow">█</tspan>
     </text>
   </g>
