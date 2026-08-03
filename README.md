@@ -14,7 +14,7 @@ I build things that look good and work even better.
 </div>
 
 <p align="center">
-  <img src="ascii-terminal-v2.svg" alt="Animated terminal" width="600">
+  <img src="ascii-terminal-v3.svg" alt="Animated terminal" width="600">
 </p>
 
 ---

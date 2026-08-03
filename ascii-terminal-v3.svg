@@ -42,9 +42,9 @@
   <rect y="28" width="620" height="10" fill="url(#titleBar)"/>
   
   <!-- Traffic lights -->
-  <circle cx="22" cy="19" r="6.5" fill="#ff5f57" opacity="0.9"/>
-  <circle cx="42" cy="19" r="6.5" fill="#febc2e" opacity="0.9"/>
-  <circle cx="62" cy="19" r="6.5" fill="#28c840" opacity="0.9"/>
+  <circle cx="25" cy="19" r="6.5" fill="#ff5f57" opacity="0.9"/>
+  <circle cx="45" cy="19" r="6.5" fill="#febc2e" opacity="0.9"/>
+  <circle cx="65" cy="19" r="6.5" fill="#28c840" opacity="0.9"/>
   
   <!-- Title -->
   <text x="310" y="23" class="title-text" text-anchor="middle">martin@macbook — zsh — 80×24</text>
