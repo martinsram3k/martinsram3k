@@ -57,26 +57,8 @@ Jsem kreativní tvůrce, který propojuje vizuální svět s webovým vývojem. 
 
 ---
 
-### 📊 GitHub Activity
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=martinsram3k&theme=transparent&hide_border=true&include_all_commits=false&count_private=false&layout=compact" />
-  
-  <br />
-  
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/martinsram3k/martinsram3k/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/martinsram3k/martinsram3k/output/github-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/martinsram3k/martinsram3k/output/github-snake.svg" />
-  </picture>
-</div>
-
----
-
 <div align="center">
   <h4>☕ Podpoř moji tvorbu</h4>
   <a href="https://buymeacoffee.com/martin.sram3k"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" /></a>
   <a href="https://paypal.me/@marti842"><img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" /></a>
-  <br /><br />
-  <img src="https://visitcount.itsvg.in/api?id=martinsram3k&icon=0&color=0" />
 </div>
