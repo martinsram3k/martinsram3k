@@ -9,103 +9,103 @@
     .prompt { fill: #38bdf8; }
     .cmd { fill: #f3f4f6; }
     .output { fill: #a7f3d0; }
-    .comment { fill: #6b7280; font-style: italic; }
-    .ascii { fill: #818cf8; font-size: 11px; line-height: 14px; }
-    .cursor { fill: #38bdf8; }
+    .ascii { fill: #818cf8; font-size: 11px; line-height: 14px; font-weight: bold; }
   </style>
 
   <rect width="100%" height="100%" fill="#0b0f19" rx="16" stroke="rgba(255, 255, 255, 0.08)" stroke-width="2"/>
   
-  <!-- Title Bar (macOS style) -->
+  <!-- Title Bar -->
   <path d="M 0,16 A 16,16 0 0,1 16,0 L 584,0 A 16,16 0 0,1 600,16 L 600,35 L 0,35 Z" fill="#111827"/>
   <circle cx="25" cy="18" r="6" fill="#ef4444"/>
   <circle cx="45" cy="18" r="6" fill="#fbbf24"/>
   <circle cx="65" cy="18" r="6" fill="#10b981"/>
   <text x="300" y="22" fill="#9ca3af" font-size="11" font-family="monospace" text-anchor="middle">martin@macbook: ~</text>
 
-  <!-- 1. Whoami Command & Output -->
+  <!-- Main Terminal Group that clears at 11s -->
   <g>
     <animate attributeName="visibility" values="visible;hidden" keyTimes="0;0.916" dur="12s" repeatCount="indefinite" calcMode="discrete"/>
-    
-    <!-- Typing command -->
-    <text x="25" y="70" class="term-text prompt">$ <tspan class="cmd">
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.016" dur="12s" repeatCount="indefinite" fill="freeze"/>w</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.033" dur="12s" repeatCount="indefinite" fill="freeze"/>h</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.050" dur="12s" repeatCount="indefinite" fill="freeze"/>o</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.066" dur="12s" repeatCount="indefinite" fill="freeze"/>a</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.083" dur="12s" repeatCount="indefinite" fill="freeze"/>m</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.100" dur="12s" repeatCount="indefinite" fill="freeze"/>i</tspan>
-    </tspan>
-    <tspan class="cursor" opacity="0">_
-      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
-      <animate attributeName="visibility" values="visible;hidden" keyTimes="0;0.15" dur="12s" repeatCount="indefinite" calcMode="discrete"/>
-    </tspan>
-    </text>
 
-    <!-- Command output -->
-    <text x="25" y="95" class="term-text output" opacity="0">
-      <animate attributeName="opacity" values="0;1" keyTimes="0;0.15" dur="12s" repeatCount="indefinite" fill="freeze"/>
-      Martin Šrámek — Freelance Creator &amp; WebDev
-    </text>
+    <!-- 1. Whoami Command & Output -->
+    <g>
+      <text x="25" y="70" class="term-text prompt">$ <tspan class="cmd">whoami</tspan></text>
+      
+      <!-- Blinking Cursor -->
+      <text y="70" class="term-text prompt" font-weight="bold">_
+        <animate attributeName="x" values="40;40;90;90" keyTimes="0;0.016;0.100;1" dur="12s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+        <animate attributeName="visibility" values="visible;hidden" keyTimes="0;0.150;1" dur="12s" repeatCount="indefinite" calcMode="discrete"/>
+      </text>
+
+      <!-- Cover Rectangle for typing effect -->
+      <rect x="40" y="55" width="60" height="20" fill="#0b0f19">
+        <animate attributeName="x" values="40;40;90;90" keyTimes="0;0.016;0.100;1" dur="12s" repeatCount="indefinite" />
+        <animate attributeName="width" values="60;60;0;0" keyTimes="0;0.016;0.100;1" dur="12s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Output -->
+      <text x="25" y="95" class="term-text output" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.149;0.150;1" dur="12s" repeatCount="indefinite" />
+        Martin Šrámek — Freelance Creator &amp; WebDev
+      </text>
+    </g>
+
+    <!-- 2. Cat skills.txt Command & Output -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.199;0.200;1" dur="12s" repeatCount="indefinite" />
+      
+      <text x="25" y="130" class="term-text prompt">$ <tspan class="cmd">cat skills.txt</tspan></text>
+      
+      <!-- Blinking Cursor -->
+      <text y="130" class="term-text prompt" font-weight="bold">_
+        <animate attributeName="x" values="40;40;155;155" keyTimes="0;0.200;0.433;1" dur="12s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+        <animate attributeName="visibility" values="visible;hidden" keyTimes="0;0.483;1" dur="12s" repeatCount="indefinite" calcMode="discrete"/>
+      </text>
+
+      <!-- Cover Rectangle -->
+      <rect x="40" y="115" width="125" height="20" fill="#0b0f19">
+        <animate attributeName="x" values="40;40;155;155" keyTimes="0;0.200;0.433;1" dur="12s" repeatCount="indefinite" />
+        <animate attributeName="width" values="125;125;0;0" keyTimes="0;0.200;0.433;1" dur="12s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- ASCII Box Output -->
+      <text x="25" y="160" class="term-text ascii" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.482;0.483;1" dur="12s" repeatCount="indefinite" />
+        <tspan x="25" dy="0">  +---------------------------------------------------+</tspan>
+        <tspan x="25" dy="16">  |  🎥  <tspan fill="#ffffff">Video Editing</tspan>  - Premiere Pro, After Effects  |</tspan>
+        <tspan x="25" dy="16">  |  🎨  <tspan fill="#ffffff">Graphic Design</tspan> - Photoshop, Illustrator   |</tspan>
+        <tspan x="25" dy="16">  |  🌐  <tspan fill="#ffffff">Web Development</tspan>- HTML/JS, Python, PHP     |</tspan>
+        <tspan x="25" dy="16">  |  💼  <tspan fill="#ffffff">SaaS Projects</tspan>  - klipni.eu                  |</tspan>
+        <tspan x="25" dy="16">  +---------------------------------------------------+</tspan>
+      </text>
+    </g>
+
+    <!-- 3. Clear Command -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.749;0.750;1" dur="12s" repeatCount="indefinite" />
+      
+      <text x="25" y="290" class="term-text prompt">$ <tspan class="cmd">clear</tspan></text>
+      
+      <!-- Blinking Cursor -->
+      <text y="290" class="term-text prompt" font-weight="bold">_
+        <animate attributeName="x" values="40;40;80;80" keyTimes="0;0.750;0.833;1" dur="12s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+        <animate attributeName="visibility" values="visible;hidden" keyTimes="0;0.916;1" dur="12s" repeatCount="indefinite" calcMode="discrete"/>
+      </text>
+
+      <!-- Cover Rectangle -->
+      <rect x="40" y="275" width="50" height="20" fill="#0b0f19">
+        <animate attributeName="x" values="40;40;80;80" keyTimes="0;0.750;0.833;1" dur="12s" repeatCount="indefinite" />
+        <animate attributeName="width" values="50;50;0;0" keyTimes="0;0.750;0.833;1" dur="12s" repeatCount="indefinite" />
+      </rect>
+    </g>
   </g>
 
-  <!-- 2. Cat skills.txt Command & ASCII Art Output -->
+  <!-- Blank command line at the very end during clear (from 11s to 12s) -->
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1" keyTimes="0;0.20" dur="12s" repeatCount="indefinite" fill="freeze"/>
-    <animate attributeName="visibility" values="visible;hidden" keyTimes="0;0.916" dur="12s" repeatCount="indefinite" calcMode="discrete"/>
-    
-    <!-- Typing command -->
-    <text x="25" y="130" class="term-text prompt">$ <tspan class="cmd">
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.216" dur="12s" repeatCount="indefinite" fill="freeze"/>c</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.233" dur="12s" repeatCount="indefinite" fill="freeze"/>a</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.250" dur="12s" repeatCount="indefinite" fill="freeze"/>t</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.266" dur="12s" repeatCount="indefinite" fill="freeze"/> </tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.283" dur="12s" repeatCount="indefinite" fill="freeze"/>s</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.300" dur="12s" repeatCount="indefinite" fill="freeze"/>k</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.316" dur="12s" repeatCount="indefinite" fill="freeze"/>i</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.333" dur="12s" repeatCount="indefinite" fill="freeze"/>l</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.350" dur="12s" repeatCount="indefinite" fill="freeze"/>l</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.366" dur="12s" repeatCount="indefinite" fill="freeze"/>s</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.383" dur="12s" repeatCount="indefinite" fill="freeze"/>.</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.400" dur="12s" repeatCount="indefinite" fill="freeze"/>t</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.416" dur="12s" repeatCount="indefinite" fill="freeze"/>x</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.433" dur="12s" repeatCount="indefinite" fill="freeze"/>t</tspan>
-    </tspan>
-    <tspan class="cursor" opacity="0">_
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.915;0.916;1" dur="12s" repeatCount="indefinite"/>
+    <text x="25" y="70" class="term-text prompt">$ <tspan font-weight="bold" fill="#38bdf8">_
       <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
-      <animate attributeName="visibility" values="visible;hidden" keyTimes="0;0.483" dur="12s" repeatCount="indefinite" calcMode="discrete"/>
-    </tspan>
-    </text>
-
-    <!-- ASCII Box Output -->
-    <text x="25" y="160" class="term-text ascii" opacity="0">
-      <animate attributeName="opacity" values="0;1" keyTimes="0;0.483" dur="12s" repeatCount="indefinite" fill="freeze"/>
-      <tspan x="25" dy="0">  +---------------------------------------------------+</tspan>
-      <tspan x="25" dy="16">  |  🎥  <tspan fill="#ffffff">Video Editing</tspan>  - Premiere Pro, After Effects  |</tspan>
-      <tspan x="25" dy="16">  |  🎨  <tspan fill="#ffffff">Graphic Design</tspan> - Photoshop, Illustrator   |</tspan>
-      <tspan x="25" dy="16">  |  🌐  <tspan fill="#ffffff">Web Development</tspan>- HTML/JS, Python, PHP     |</tspan>
-      <tspan x="25" dy="16">  |  💼  <tspan fill="#ffffff">SaaS Projects</tspan>  - klipni.eu                  |</tspan>
-      <tspan x="25" dy="16">  +---------------------------------------------------+</tspan>
-    </text>
-  </g>
-
-  <!-- 3. Clear Command & Clear Action -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" keyTimes="0;0.75" dur="12s" repeatCount="indefinite" fill="freeze"/>
-    <animate attributeName="visibility" values="visible;hidden" keyTimes="0;0.916" dur="12s" repeatCount="indefinite" calcMode="discrete"/>
-    
-    <!-- Typing command -->
-    <text x="25" y="290" class="term-text prompt">$ <tspan class="cmd">
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.766" dur="12s" repeatCount="indefinite" fill="freeze"/>c</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.783" dur="12s" repeatCount="indefinite" fill="freeze"/>l</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.800" dur="12s" repeatCount="indefinite" fill="freeze"/>e</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.816" dur="12s" repeatCount="indefinite" fill="freeze"/>a</tspan>
-      <tspan opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0;0.833" dur="12s" repeatCount="indefinite" fill="freeze"/>r</tspan>
-    </tspan>
-    <tspan class="cursor" opacity="0">_
-      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
-      <animate attributeName="visibility" values="visible;hidden" keyTimes="0;0.916" dur="12s" repeatCount="indefinite" calcMode="discrete"/>
-    </tspan>
-    </text>
+    </tspan></text>
   </g>
 </svg>
