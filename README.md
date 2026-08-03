@@ -10,6 +10,10 @@
   <img src="https://img.shields.io/badge/Otevřený_spolupráci-Hledám_klienty-2ea44f?style=for-the-badge" alt="Hledám klienty">
 </p>
 
+<p align="center">
+  <img src="ascii-animation.svg" alt="Martin Šrámek ASCII Art Animation" width="600">
+</p>
+
 ---
 
 ### 🧍 About Me
