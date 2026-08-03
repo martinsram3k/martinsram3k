@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="ascii-animation.svg" alt="Martin Šrámek ASCII Art Animation" width="600">
+  <img src="ascii-terminal.svg" alt="Martin Šrámek ASCII Art Animation" width="600">
 </p>
 
 ---
