@@ -71,7 +71,8 @@ I'm a self-taught creative developer from the Czech Republic 🇨🇿 who bridge
 | Project | Description | Tech |
 |:--------|:------------|:-----|
 | [🎬 klipni.eu](https://klipni.eu) | SaaS platform for video editing services | Laravel, JS |
-| [💻 podnikani-fakturace](https://github.com/martinsram3k/podnikani-fakturace) | Full invoicing & client management app for my freelance business | Laravel, PHP, SQLite |
+| [🔌 FLOW](https://github.com/martinsram3k/FLOW) | Custom macro keyboard with programmable keys | C, Hardware |
+| [⌨️ Macropad Configurator](https://github.com/martinsram3k/macropad_configurator) | Web-based configurator for custom macropads | JavaScript |
 | [🍎 LidMonitor](https://github.com/martinsram3k/LidMonitor) | Automatic MacBook lid state monitor with sleep & brightness control | Shell |
 | [⏰ Node-Smart-Clock](https://github.com/martinsram3k/Node-Smart-Clock) | Smart clock built on custom hardware | C, Arduino |
 | [🌡️ ESP32 Fan Control](https://github.com/martinsram3k/eps32_fan_controll) | Temperature-based automatic fan controller | C++, ESP32 |
